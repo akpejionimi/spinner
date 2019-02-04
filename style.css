@@ -48,6 +48,8 @@ main{
 .bottom-links{
     display: flex;
     justify-content: space-between;
+    border-style: none;
+    border-color: none;
 }
 
 .links{
@@ -101,8 +103,11 @@ font-size: 12px
     justify-content: space-between;
 }
 .pic-size{
-    height: 474px;
+    width: 33%; 
+    /* height: 300px; */
     margin-right: 3px;
+    object-fit: cover;
+    height: 100%;
     
 }
 .gallery{
@@ -217,6 +222,24 @@ font-size: 12px
     border-style: ridge;
     margin-top: 80px;
     background: #fafafa;
+    position: relative;
+}
+.box::before{
+    content: '❝';
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+}
+.box::after{
+    content: "❞";
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    bottom: -47px;
+    right: -27px;
+
 }
 .para-text hr{
     border-color: red;
