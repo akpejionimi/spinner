@@ -80,6 +80,7 @@ font-size: 12px
     color: white;
     background-color: red;
     padding: 15px 50px;
+    border-style: none;
 }
 .page-text{
     width: 400px;
@@ -104,16 +105,12 @@ font-size: 12px
 }
 .pic-size{
     width: 33%; 
-    /* height: 300px; */
     margin-right: 3px;
     object-fit: cover;
-    height: 100%;
+    height: 20%;
     
 }
 .gallery{
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
     width: 100%;
 }
 .gal-left{
@@ -212,11 +209,27 @@ font-size: 12px
 }
 .lady-pic{
     height: 500px;
-    width: 50%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.lady-biker{
+    position: relative;
+    overflow: hidden;
+
+}
+.overflow{
+    position:absolute;
+    top: -55px;
+    right: -70px;
+    background-color:white;
+    width: 200px;
+    bottom: -55px;
+    transform: rotate(-20deg);
 }
 .box{
     height: 200px;
-    width: 50%;
+    width: 40%;
     padding:20px;
     margin:25px;
     border-style: ridge;
@@ -348,9 +361,11 @@ font-size: 12px
 
     clear: both;
 }
-@media screen and (max-width:800px){
+@media screen and 
+ (min-width:300px) and
+ (max-width:800px){
     .main{
-        width: 100%;
+        width: 90%;
     }
     .toplinks{
         display: none;
@@ -387,10 +402,14 @@ font-size: 12px
     .pics{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .pic-size{
         width: 100%;
-        /* height: 400px; */
+        height: 300px;
+        object-fit: contain;
+        margin-bottom: 5px;
+
     }
     .gal-left{
         display: flex;
@@ -400,8 +419,9 @@ font-size: 12px
     .gal-right{
         display: flex;
         flex-wrap: wrap;
-        width:100%;
-        
+        width:90%;
+        justify-content: center;
+           
     }
     .gal-size{
         height: 200px;
@@ -423,7 +443,7 @@ font-size: 12px
     }
     .bike{
         width:100%;
-        margin-left: 60px;
+        object-fit: contain;
     }
     .text-container{
         width: 90%;
@@ -434,15 +454,34 @@ font-size: 12px
         display: flex;
         flex-direction: column;
         width: 100%;
+        
+    }
+    .fift-page{
+        width: 85%;
+        margin-left: 19px;
     }
     .lady-pic{
-        width: 100%;
+        width: 80%;
+        object-fit: contain;
+    }
+    .overflow{
+        display: none;
     }
     .box{
-        width: 80%;
+        width:300px;
+        margin: 0px;
+        padding: 40px;
+        margin-top: 0px;
+        /* display: none; */
+        
+    }
+    .para-text{
+        width: 300px;
+        text-align: left;
     }
     .pageinfo-desc{
         width: 80%;
+
     }
     .social p{
         display: none;
@@ -452,7 +491,20 @@ font-size: 12px
         flex-direction: column;
         align-content: center;
         margin: 0 auto;
-        width: 100%;
+        width: 80%;
+    }
+    .pageinfo-desc{
+        margin-left: 10px;
+    }
+    .icon-design .fa{
+        margin-left: -20px;
+        font-size: 15px;
+        width: 10px;
+        margin-right: 20px;
+        
+    }
+    .liner-clear{
+        width: 98%;
     }
     .mail{
         display: flex;
@@ -460,7 +512,7 @@ font-size: 12px
         margin: 0 auto;
     }
     .social{
-        margin-left: 160px;
+        margin-left: 10px;
     }
     .footer{
         display: flex;
@@ -473,7 +525,7 @@ font-size: 12px
        width: 98%; 
     }
 }
-@media screen and (max-width:300px){
+@media screen and (max-width:800px){
     .main{
         width: 100%;
     }
