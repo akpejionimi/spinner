@@ -3,16 +3,17 @@
     padding: 0;
     outline: 0; 
     font-family: 'PT Serif', serif;
-    img:100%;
 }
 main{
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .navbar-container{
     width: 100%;
     position: sticky;
+    height: 10vh;;
 
    
 }
@@ -66,7 +67,7 @@ font-size: 12px
     padding-right: 30px;   
 }
 .page{
-    background: url("frontmage.jpg") no-repeat center center;
+    background: url(./images/frontmage.jpg) no-repeat center center;
     height: 700px;
     object-fit: cover;
     padding-top: 100px;
@@ -136,9 +137,7 @@ font-size: 12px
 .third-page h3{
     padding-top: 15px;
 }
-.third-page p{
-    padding-bottom: ;
-}
+
 .icon-hp p{
     text-align: center;
     font-size: 36px;
@@ -322,7 +321,7 @@ font-size: 12px
 
 }
 .submit{
-    background-image: url(catarrow.png);
+    background-image: url(./images//catarrow.png);
     font-size: 30px;
     padding: 0 20px;
     background-repeat: no-repeat;
@@ -379,6 +378,25 @@ font-size: 12px
         display: block;
         margin-top:20px;
         
+    }
+    .hamb-menu div{
+        width: 35px;
+        height: 9px;
+        background-color: black;
+        margin: 5px 0; 
+        transition: 1s
+    }
+    
+    .change div:nth-child(1){
+        transform: rotate(-45deg) translate(-10px,10px);
+    }
+    
+    .change div:nth-child(2){
+        opacity: 0;
+    }
+    
+    .change div:nth-child(3){
+        transform: rotate(45deg) translate(-10px, -10px);
     }
     .cart{
         margin-top: 20px;
@@ -533,6 +551,25 @@ font-size: 12px
     }
     .toplinks{
         display: none;
+    }
+    .hamb-menu div{
+        width: 35px;
+        height: 9px;
+        background-color: black;
+        margin: 5px 0; 
+        transition: 1s
+    }
+    
+    .change div:nth-child(1){
+        transform: rotate(-45deg) translate(-10px,10px);
+    }
+    
+    .change div:nth-child(2){
+        opacity: 0;
+    }
+    
+    .change div:nth-child(3){
+        transform: rotate(45deg) translate(-10px, -10px);
     }
     .downlinks{
         display: none;
